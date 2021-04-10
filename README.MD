@@ -15,7 +15,7 @@
 
 - 8/04/21 : - Reasearching, thought about the following ideas
 
-  - [ ] Make a login page
+  - [x] Make a login page
   - [ ] Make the website responsive to all type of devices
   - [ ] Coming up with personalized homepages
   - [ ] Reasearching and inspecting on other webpages

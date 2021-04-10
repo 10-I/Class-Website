@@ -1,0 +1,119 @@
+<html lang="en"><head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+<link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+  <title>CodePen - Only CSS: Usually Button</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+  
+<style>
+:root {
+  --base-color: rgba(255, 255, 255, 1);
+  --hover-color: rgba(220, 120, 150, 1);
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Anton", sans-serif;
+}
+.horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100px;
+  height: 40px;
+  margin: 20px;
+  border: 1px solid var(--base-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+
+}
+
+.faizanel{
+	background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 50px;
+padding-bottom: 50px;
+margin-top: 00px;
+margin-left: 100px;
+margin-right: 100px;
+width:100%
+
+}
+
+.horizontal > .text {
+  position: relative;
+  color: transparent;
+  background-image: linear-gradient(90deg, var(--hover-color) 0%, var(--hover-color) 50%, var(--base-color) 50%, var(--base-color) 100%);
+  background-repeat: repeat;
+  background-size: 200%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: background-position 300ms;
+}
+.horizontal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--base-color);
+  transform-origin: 100% 0;
+  transform: scale3d(0, 1, 1);
+  transition: transform 300ms;
+}
+.horizontal:hover .text {
+  background-position: 0 0;
+}
+.horizontal:hover::before {
+  transform-origin: 0 0;
+  transform: scale3d(1, 1, 1);
+}
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+</head>
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+
+<body background="38d4893e-51f7-4ab0-a51f-86792deab97e.jpg" translate="no" data-new-gr-c-s-check-loaded="14.983.0" data-gr-ext-installed="">
+<div class="faizanel" style="font-family: Verdana">
+<h1>Welcome, Tanmeen</h1>
+<p>Tanmeen, a sub specie of the homo sapiens, who likes being lethargic more than productivity. Smart, funny and stupid.</p>
+</div>
+
+<a class="horizontal"><span class="text">Next</span></a></p>
+</body></html>
