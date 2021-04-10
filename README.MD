@@ -14,6 +14,7 @@
 ## Working on/ Discussion
 
 - 8/04/21 : - Reasearching, thought about the following ideas
+
   - [ ] Make a login page
   - [ ] Make the website responsive to all type of devices
   - [ ] Coming up with personalized homepages
