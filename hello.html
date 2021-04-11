@@ -108,9 +108,15 @@ width:100%
 
 <body background="38d4893e-51f7-4ab0-a51f-86792deab97e.jpg" translate="no" data-new-gr-c-s-check-loaded="14.983.0" data-gr-ext-installed="">
 <div class="faizanel" style="font-family: Verdana">
-<h1>Welcome, Tanmeen</h1>
-<p>Tanmeen, a sub specie of the homo sapiens, who likes being lethargic more than productivity. Smart, funny and stupid.</p>
+<h1 id = "name"></h1>
+<p id = 'description'></p>
 </div>
 
 <a class="horizontal"><span class="text">Next</span></a></p>
-</body></html>
+</body>
+<script>
+  name = localStorage.getItem("name");
+  document.getElementById("name").innerHTML = "Hello " + name;
+  document.getElementById('description').innerHTML = name + ", a sub specie of the homo sapiens, who likes being lethargic more than productivity. Smart, funny and stupid."
+</script>
+</html>

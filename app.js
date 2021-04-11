@@ -38,4 +38,6 @@ function getInputValue() {
   } else {
     document.write("This website is meant for only specific people");
   }
+
+  localStorage.name = inputVal;
 }
