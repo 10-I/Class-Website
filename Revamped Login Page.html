@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="./assets/favicon for website.png" type="image/x-icon">
+<style>
+body{
+  margin: 0;
+  padding: 0;
+}
+.container img {
+  width: 93%;
+  height: 98%;
+}
+
+.header {
+  font-weight: bold;
+  font: 200 60px'Oleo Script', Helvetica, sans-serif;
+  color: #2b2b2b;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.main-wrap{
+  display: flex;
+  flex-direction: row;
+}
+.main-wrap > div{
+  flex: 1;
+}
+input[type="text"],
+input[type="password"] {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #C0F1C9;
+  color: black;
+  padding: 10px 12px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+}
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  margin:0;
+  flex: 1 1 auto;
+  margin: 40px;
+  padding: 11px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+  border-radius: 5px;
+ }
+
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+.btn-special {
+  background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+}
+</style>
+</head>
+<body>
+<script src="./app.js"></script>
+<div class="main-wrap">
+  <div class="container">
+    <img src="./assets/Group 3.png"/>
+  </div>
+  <div align="center">
+    <h1 align="center" class="text-center header">Verification Form</h1><br>
+    <input type="text" placeholder="Enter your name " id="inputId" />
+    <br /><br />
+      <a class="btn btn-special" onclick="getInputValue();">Submit</a>
+  </div>
+</div>
+</body>
+</html>
