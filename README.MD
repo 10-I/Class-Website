@@ -16,6 +16,17 @@
 - 8/04/21 : - Reasearching, thought about the following ideas
 
   - [x] Make a login page
-  - [ ] Make the website responsive to all type of devices
-  - [ ] Coming up with personalized homepages
+  - [x] Make the website responsive to all type of devices
   - [ ] Reasearching and inspecting on other webpages
+
+- 11/04/21 : - Contents of Our Websites
+ 
+  - [ ] Make a Quizes section, Sponsored by SK Studies and Anderson Quiz
+  - [ ] Make a Class Gallery 6th - 10th (grade)
+  - [ ] Games by Sathya
+  - [ ] Advertisement Space
+  - [ ] YouTube Space
+  - [ ] News Section
+  - [ ] About Us (Class)
+  - [ ] Credits (Coders)
+  - [ ] Roles of students in our class
