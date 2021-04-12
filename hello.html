@@ -129,7 +129,8 @@ width:100%
           if (user != "" && user != null) {
             setCookie("username", user, 30);
             document.getElementById('name').innerHTML = localStorage.name
-            document.getElementById('description').innerHTML = user
+            localStorage.bio = user
+            document.getElementById('description').innerHTML = localStorage.getItem('bio')
             
           }
         }
