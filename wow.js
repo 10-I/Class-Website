@@ -1,6 +1,6 @@
 function doStuff() {
   if (
-    localStorage.bio == null ||
+    localStorage.bio == "null" ||
     localStorage.bio == undefined ||
     localStorage.bio == " "
   ) {
