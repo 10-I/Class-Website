@@ -123,7 +123,7 @@ width:100%
       function checkCookie() {
         let user = getCookie("username");
         if (user != "") {
-          window.location.href = "hello.html";
+          alert("You didn't enter a name, idiot.")
         } else {
           user = prompt("Please describe yourself!");
           if (user != "" && user != null) {
@@ -131,7 +131,7 @@ width:100%
             document.getElementById('name').innerHTML = localStorage.name
             localStorage.bio = user
             document.getElementById('description').innerHTML = localStorage.getItem('bio')
-            
+
           }
         }
       }
