@@ -93,29 +93,56 @@ width:100%
 </style>
 <script>
   window.console = window.console || function(t) {};
-</script>
-</head>
 
-
-  <script>
   if (document.location.search.match(/type=embed/gi)) {
     window.parent.postMessage("resize", "*");
   }
+  function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+        var expires = "expires=" + d.toGMTString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+      }
+
+      function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(";");
+        for (var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == " ") {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return "";
+      }
+
+      function checkCookie() {
+        let user = getCookie("username");
+        if (user != "") {
+          window.location.href = "hello.html";
+        } else {
+          user = prompt("Please describe yourself!");
+          if (user != "" && user != null) {
+            setCookie("username", user, 30);
+            document.getElementById('name').innerHTML = localStorage.name
+            document.getElementById('description').innerHTML = user
+            
+          }
+        }
+      }
 </script>
+</head>
 
-
-
-<body background="./assets/Hello.png" translate="no" data-new-gr-c-s-check-loaded="14.983.0" data-gr-ext-installed="">
+<body background="./assets/Hello.png" translate="no" data-new-gr-c-s-check-loaded="14.983.0" data-gr-ext-installed="" onload="checkCookie()">
 <div class="faizanel" style="font-family: Verdana">
 <h1 id = "name"></h1>
 <p id = 'description'></p>
 </div>
 
-<a class="horizontal"><span class="text">Next</span></a></p>
+<a class="horizontal" href="menu.html"><span class="text">Next</span></a></p>
 </body>
-<script>
-  name = localStorage.getItem("name");
-  document.getElementById("name").innerHTML = "Hello " + name;
-  document.getElementById('description').innerHTML = "Hope you are having a nice day. Please click next to proceed."
-</script>
 </html>
