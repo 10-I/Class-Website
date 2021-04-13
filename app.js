@@ -36,7 +36,7 @@ function getInputValue() {
   if (students.includes(inputVal)) {
     window.location.href = "./hello.html";
   } else {
-    document.write("This website is meant for only specific people");
+    document.write("This website is meant for only students.");
   }
 
   localStorage.name = inputVal;
