@@ -1,10 +1,10 @@
 function doStuff() {
   if (
     localStorage.bio == "null" ||
-    localStorage.bio == undefined ||
+    localStorage.bio == "undefined" ||
     localStorage.bio == " "||
     localStorage.bio == ""||
-    localStorage.bio == "undefined" 
+    localStorage.bio == "undefined"
 
   ) {
     let something = prompt("Hey you enter your description! Or else!!");
@@ -19,4 +19,4 @@ function doStuff() {
   }
 }
 
-doStuff(); 
+doStuff();
