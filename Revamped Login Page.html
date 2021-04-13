@@ -7,6 +7,7 @@
       href="./assets/favicon for website.png"
       type="image/x-icon"
     />
+  
     <style>
       body {
         margin: 0;
@@ -86,7 +87,18 @@
       }
     </style>
   </head>
-  <body>
+     <script>
+ function disableClick(){
+ document.onclick=function(event){
+ if (event.button == 2) {
+ alert('Right Click Message');
+ return false;
+ }
+ }
+ }
+ </script>
+ <body onload="disableClick"></body>
+  <body >
     <script src="./app.js"></script>
     <div class="main-wrap">
       <div class="container">
