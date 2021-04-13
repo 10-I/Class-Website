@@ -22,10 +22,10 @@
 - 11/04/21 : - Contents of Our Websites
 
   - [ ] Make a Quizes section, Sponsored by SK Studies and Anderson Quiz
-  - [ ] Making a menu page
-    - [ ] Thinking of dark and light theme
-    - [ ] Reusing Faizanel
-    - [ ] Adding the contents in
+  - [x] Making a menu page
+    - [x] Thinking of dark and light theme
+    - [x] Reusing Faizanel
+    - [x] Adding the contents in
   - [ ] Make a Class Gallery 6th - 10th (grade)
   - [ ] Games by Sathya
   - [ ] Advertisement Space
