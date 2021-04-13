@@ -25,7 +25,7 @@
       }
 
       body {
-        background-image: url(./assets/Hello.png);
+        background-image: url(./assets/menu-bg.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
         font-family: "Poppins", sans-serif;
@@ -44,6 +44,11 @@
         left: 0;
         text-align: center;
       }
+
+      #arrow {
+        margin-left: 10px;
+        cursor: pointer;
+      }
       nav > h1 {
         color: var(--primary-text-color);
         margin: auto;
@@ -52,6 +57,7 @@
 
       #icon {
         margin: 5px;
+        margin-right: 10px;
         width: 30px;
         height: 30px;
         cursor: pointer;
@@ -98,6 +104,7 @@
 
   <body>
     <nav>
+      <img src="./assets/left-arrow.svg" id="arrow" />
       <h1>10I.COM</h1>
       <img src="./assets/moon.svg" id="icon" />
     </nav>
@@ -142,6 +149,11 @@
         } else {
           icon.src = "./assets/moon.svg";
         }
+      };
+
+      let arrow = document.getElementById("arrow");
+      arrow.onclick = function () {
+        window.location.href = "./hello.html";
       };
     </script>
   </body>
