@@ -5,33 +5,140 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,600&display=swap");
+
+      :root {
+        --primary-color: rgba(255, 255, 255, 0.5);
+        --navbar-color: rgba(255, 255, 255, 0.8);
+        --primary-text-color: rgb(0, 0, 0);
+      }
+
+      .dark-theme {
+        --primary-color: rgba(0, 0, 0, 0.6);
+        --navbar-color: rgba(0, 0, 0, 0.8);
+        --primary-text-color: rgb(255, 255, 255);
+      }
+
       body {
         background-image: url(./assets/Hello.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: "Poppins", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        z-index: 1;
+        position: fixed;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: var(--navbar-color);
+        height: 45px;
+        top: 0;
+        left: 0;
+        text-align: center;
+      }
+      nav > h1 {
+        color: var(--primary-text-color);
+        margin: auto;
+        padding-top: 0.5%;
+      }
+
+      #icon {
+        margin: 5px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
+
+      .faizanel {
+        background: var(--primary-color);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        padding: 30px 20px 30px 20px;
+        margin: 0 auto;
+        margin-top: 80px;
+        width: 60vw;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .faizanel > h2 {
+        font-size: 5vmin;
+        color: var(--primary-text-color);
+      }
+
+      .faizanel > p {
+        color: var(--primary-text-color);
+        font-size: 3vmin;
+        font-family: "Poppins", sans-serif;
+        font-style: italic;
+      }
+
+      /* Scale up the box */
+      .faizanel:hover {
+        transform: scale(1.06, 1.06);
+      }
+
+      /* Fade in the pseudo-element with the bigger shadow */
+      .faizanel:hover::after {
+        opacity: 1;
       }
     </style>
   </head>
 
   <body>
-    <div class="menu-contents">
-      <h2></h2>
-      <p></p>
+    <nav>
+      <h1>10I.COM</h1>
+      <img src="./assets/moon.svg" id="icon" />
+    </nav>
+    <div class="faizanel">
+      <h2>YOUTUBE SPACE</h2>
+      <p>Checkout some amazing YouTube channels created by our creators</p>
     </div>
-    <div class="menu-contents">
-      <h2></h2>
-      <p></p>
+    <div class="faizanel">
+      <h2>GAME-ZONE</h2>
+      <p>
+        Our class is very much creative and very technical indeed. Check out
+        some games made by our friends
+      </p>
     </div>
-    <div class="menu-contents">
-      <h2></h2>
-      <p></p>
+    <div class="faizanel">
+      <h2>CLASS GALLERY</h2>
+      <p>Time to cherish our good old memories</p>
     </div>
-    <div class="menu-contents">
-      <h2></h2>
-      <p></p>
+
+    <div class="faizanel">
+      <h2>QUIZCON</h2>
+      <p>
+        Take some quizzes sponsored exclusively for this website by Anderson
+        Quiz and SK Studies
+      </p>
     </div>
-    <div class="menu-contents">
-      <h2></h2>
-      <p></p>
+    <div class="faizanel">
+      <h2>EXCITED ABOUT THIS WEBSITE?</h2>
+      <p>Know more about the development and the owls behind this website.</p>
     </div>
+    <script>
+      let icon = document.getElementById("icon");
+
+      icon.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")) {
+          icon.src = "./assets/sun.png";
+        } else {
+          icon.src = "./assets/moon.svg";
+        }
+      };
+    </script>
   </body>
 </html>
