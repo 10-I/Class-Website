@@ -98,13 +98,14 @@ const passwords = [
 // Making the check function running when the btn is clicked
 function check() {
   // Taking in the values inputted by the user
-  let username = document.getElementById("username").value;
+  let username = document.getElementById("inputId").value;
   let password = document.getElementById("password").value;
 
   // First check: Checking if the username is there in our names list
   if (names.includes(username)) {
     // Second check: Checking if the password is same [For logic check the header of this file]
     if (password == passwords[names.indexOf(username)]) {
+      localStorage.name = username;
       window.location.href = "./hello.html";
     } else {
       alert("Either the password or the username is wrong. Please try again");
