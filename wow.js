@@ -4,13 +4,7 @@ function doStuff() {
     localStorage.bio == undefined ||
     localStorage.bio == " "||
     localStorage.bio == ""||
-    localStorage.bio == "undefined" ||
-    localStorage.name == undefined||
-
-    localStorage.name == "undefined"||
-
-    localStorage.name == ""
-
+    localStorage.bio == "undefined" 
 
   ) {
     let something = prompt("Hey you enter your description! Or else!!");
