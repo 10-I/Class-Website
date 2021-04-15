@@ -1,4 +1,4 @@
-function getInputValue() {
+function check() {
   // Selecting the input element and get its value
   let a = document.getElementById("inputId").value;
   let b = document.getElementById("Password").value;
