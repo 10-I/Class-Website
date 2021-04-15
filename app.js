@@ -116,7 +116,7 @@ function check() {
 }
 
 /*
-Please Note: This was done solely for reducing our future efforts. Please don't think me wrong.. You all are good coders.. Just wanted to help you in case if we ever update the website after our deployment. I love to code, laugh and work with you guys.. Just wanted to help you.. And Faizaan you had done an excellent job with the if else if statements. But just wanted to reduce that effort of yours in the future. Thank you :)
+Please Note: This was done solely for reducing our future efforts. Please don't think me wrong.. Just wanted to help you in case if we ever update the website after our deployment. And Faizaan you had done an excellent job with the if else if statements. But just wanted to reduce that effort of yours in the future. Thank you :)
 
 If you want any further clarification relating to the logic just ask me.. I shall add it with a brief description.
 */
