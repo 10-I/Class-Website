@@ -1,7 +1,7 @@
 function check() {
   // Selecting the input element and get its value
   let a = document.getElementById("inputId").value;
-  let b = document.getElementById("Password").value;
+  let b = document.getElementById("password").value;
   if (a == "Aahil" && b == "s8626") {
     localStorage.name = a;
     window.location.href = "hello.html";
