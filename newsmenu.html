@@ -3,20 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link
-      rel="icon"
-      href="./assets/favicon for website.png"
-      type="image/x-icon"
-    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main Menu</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
-    />
+    <title>New menu</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,600&display=swap");
-
       :root {
         --primary-color: rgba(255, 255, 255, 0.5);
         --navbar-color: rgba(255, 255, 255, 0.8);
@@ -30,7 +20,7 @@
       }
 
       body {
-        background-image: url(./assets/bg-for-menu.png);
+        background-image: url(./assets/option\ 1.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
         font-family: "Poppins", sans-serif;
@@ -68,91 +58,113 @@
         cursor: pointer;
       }
 
-      #news {
-        cursor: pointer;
-      }
-
-      .faizanel {
+      .card {
         background: var(--primary-color);
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
         backdrop-filter: blur(4px);
         -webkit-backdrop-filter: blur(4px);
+        color: var(--primary-text-color);
+        padding: 10px;
         border-radius: 10px;
-        padding: 30px 20px 30px 20px;
-        margin: 0 auto;
-        margin-top: 80px;
-        width: 60vw;
         cursor: pointer;
         transition: all 0.2s ease-in-out;
+        text-align: center;
+        height: max-content;
       }
 
-      .faizanel > h2 {
-        font-size: 5vmin;
-        color: var(--primary-text-color);
+      .card > h2 {
+        font-family: "Poppins Bold", sans-serif;
       }
 
-      .faizanel > p {
-        color: var(--primary-text-color);
-        font-size: 3vmin;
-        font-family: "Poppins", sans-serif;
+      .card > p {
         font-style: italic;
       }
 
-      /* Scale up the box */
-      .faizanel:hover {
+      .cards {
+        max-width: 1200px;
+        margin: 5% auto;
+        display: grid;
+        grid-gap: 2%;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+
+      .card:hover {
         transform: scale(1.06, 1.06);
       }
 
       /* Fade in the pseudo-element with the bigger shadow */
-      .faizanel:hover::after {
+      .card:hover::after {
         opacity: 1;
       }
     </style>
   </head>
-
   <body>
     <nav>
       <img src="./assets/left-arrow.svg" id="arrow" />
       <h1>10I.COM</h1>
       <img src="./assets/moon.svg" id="icon" />
     </nav>
-    <div class="faizanel">
-      <h2>YOUTUBE SPACE</h2>
-      <p>Checkout some amazing YouTube channels created by our creators</p>
-    </div>
-    <div class="faizanel">
-      <h2>GAME-ZONE</h2>
-      <p>
-        Our class is very much creative and very technical indeed. Check out
-        some games made by our friends
-      </p>
-    </div>
-    <div class="faizanel">
-      <h2>CLASS GALLERY</h2>
-      <p>Time to cherish our good old memories</p>
-    </div>
-
-    <div class="faizanel">
-      <h2>QUIZCON</h2>
-      <p>
-        Take some quizzes sponsored exclusively for this website by Anderson
-        Quiz and SK Studies
-      </p>
-    </div>
-    <div class="faizanel">
-      <h2>CREATIVE CORNER</h2>
-      <p>Explore the creativity of our class.</p>
-    </div>
-    <div class="faizanel" id="news">
-      <h2>NEWS</h2>
-      <p>
-        Get the latest and most exclusive new right from the desks of
-        TakaTak&trade; News Station.
-      </p>
-    </div>
-    <div class="faizanel">
-      <h2>EXCITED ABOUT THIS WEBSITE?</h2>
-      <p>Know more about the development and the owls behind this website.</p>
+    <div class="cards">
+      <div class="card">
+        <img src="./assets/sun.png" />
+        <h2>News</h2>
+        <p>Description</p>
+      </div>
+      <div class="card">
+        <img src="./assets/sun.png" />
+        <h2>News</h2>
+        <p>Description</p>
+      </div>
+      <div class="card">
+        <img src="./assets/sun.png" />
+        <h2>News</h2>
+        <p>Description</p>
+      </div>
+      <div class="card">
+        <img src="./assets/sun.png" />
+        <h2>News</h2>
+        <p>Description</p>
+      </div>
+      <div class="card">
+        <img src="./assets/sun.png" />
+        <h2>News</h2>
+        <p>Description</p>
+      </div>
+      <div class="card">
+        <img src="./assets/sun.png" />
+        <h2>News</h2>
+        <p>Description</p>
+      </div>
+      <div class="card">
+        <img src="./assets/sun.png" />
+        <h2>News</h2>
+        <p>Description</p>
+      </div>
+      <div class="card">
+        <img src="./assets/sun.png" />
+        <h2>News</h2>
+        <p>Description</p>
+      </div>
+      <div class="card">
+        <img src="./assets/sun.png" />
+        <h2>News</h2>
+        <p>Description</p>
+      </div>
+      <div class="card">
+        <img src="./assets/sun.png" />
+        <h2>News</h2>
+        <p>Description</p>
+      </div>
+      <div class="card">
+        <img src="./assets/sun.png" />
+        <h2>News</h2>
+        <p>Description</p>
+      </div>
+      <div class="card">
+        <img src="./assets/sun.png" />
+        <h2>News</h2>
+        <p>Description</p>
+      </div>
     </div>
     <script>
       let icon = document.getElementById("icon");
@@ -168,12 +180,7 @@
 
       let arrow = document.getElementById("arrow");
       arrow.onclick = function () {
-        window.location.href = "./hello.html";
-      };
-
-      let news = document.getElementById("news");
-      news.onclick = function () {
-        window.location.href = "./newsmenu.html";
+        window.location.href = "./menu.html";
       };
     </script>
   </body>
