@@ -79,6 +79,23 @@
       .card > p {
         font-style: italic;
       }
+      @media (min-width: 500px) {
+        .special {
+          grid-column: 1 / span 1;
+        }
+      }
+
+      @media (min-width: 700px) {
+        .special {
+          grid-column: 1 / span 2;
+        }
+      }
+
+      @media (min-width: 1000px) {
+        .special {
+          grid-column: 1 / span 4;
+        }
+      }
 
       .cards {
         max-width: 1200px;
@@ -86,6 +103,32 @@
         display: grid;
         grid-gap: 2%;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+
+      .overlay {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 30px;
+        background-color: khaki;
+        opacity: 0.9;
+        height: 100%;
+        width: 100%;
+        visibility: hidden;
+        transition: all 0.2s ease-in-out;
+        border-radius: 10px;
+      }
+
+      .overlay > p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .card:hover .overlay {
+        visibility: visible;
       }
 
       .card:hover {
@@ -105,62 +148,32 @@
       <img src="./assets/moon.svg" id="icon" />
     </nav>
     <div class="cards">
-      <div class="card">
+      <div class="card special">
+        <div class="overlay"><p>10 mins read</p></div>
         <img src="./assets/sun.png" />
         <h2>News</h2>
         <p>Description</p>
       </div>
       <div class="card">
+        <div class="overlay"><p>10 mins read</p></div>
         <img src="./assets/sun.png" />
         <h2>News</h2>
         <p>Description</p>
       </div>
       <div class="card">
+        <div class="overlay"><p>10 mins read</p></div>
         <img src="./assets/sun.png" />
         <h2>News</h2>
         <p>Description</p>
       </div>
       <div class="card">
+        <div class="overlay"><p>10 mins read</p></div>
         <img src="./assets/sun.png" />
         <h2>News</h2>
         <p>Description</p>
       </div>
       <div class="card">
-        <img src="./assets/sun.png" />
-        <h2>News</h2>
-        <p>Description</p>
-      </div>
-      <div class="card">
-        <img src="./assets/sun.png" />
-        <h2>News</h2>
-        <p>Description</p>
-      </div>
-      <div class="card">
-        <img src="./assets/sun.png" />
-        <h2>News</h2>
-        <p>Description</p>
-      </div>
-      <div class="card">
-        <img src="./assets/sun.png" />
-        <h2>News</h2>
-        <p>Description</p>
-      </div>
-      <div class="card">
-        <img src="./assets/sun.png" />
-        <h2>News</h2>
-        <p>Description</p>
-      </div>
-      <div class="card">
-        <img src="./assets/sun.png" />
-        <h2>News</h2>
-        <p>Description</p>
-      </div>
-      <div class="card">
-        <img src="./assets/sun.png" />
-        <h2>News</h2>
-        <p>Description</p>
-      </div>
-      <div class="card">
+        <div class="overlay"><p>10 mins read</p></div>
         <img src="./assets/sun.png" />
         <h2>News</h2>
         <p>Description</p>
