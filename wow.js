@@ -4,9 +4,9 @@ function doStuff() {
     localStorage.bio == undefined ||
     localStorage.bio == " "||
     localStorage.bio == ""||
-    localStorage.bio == "undefined" 
+    localStorage.bio == "undefined"
   ) {
-    let something = prompt("Hey you enter your description! Or else!!");
+    let something = prompt("Please enter your description.");
     localStorage.bio = something;
     document.getElementById("name").innerHTML = localStorage.name;
     document.getElementById("description").innerHTML = localStorage.getItem(
@@ -18,4 +18,4 @@ document.getElementById("description").innerHTML = localStorage.bio;
   }
 }
 
-doStuff(); 
+doStuff();
