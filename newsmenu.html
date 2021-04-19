@@ -26,7 +26,7 @@
       }
 
       body {
-        background-image: url(./assets/option\ 1.jpg);
+        background-image: url(./assets/easy4.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
         font-family: "Poppins", sans-serif;
@@ -66,12 +66,10 @@
 
       .card {
         background: var(--primary-color);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-        backdrop-filter: blur(4px);
         -webkit-backdrop-filter: blur(4px);
         color: var(--primary-text-color);
         padding: 10px;
-        border-radius: 10px;
+        border-radius: 5px;
         cursor: pointer;
         transition: all 0.2s ease-in-out;
         text-align: center;
@@ -107,7 +105,7 @@
         max-width: 1200px;
         margin: 5% auto;
         display: grid;
-        grid-gap: 2%;
+        grid-gap: 3%;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       }
 
@@ -126,16 +124,6 @@
         border-radius: 10px;
       }
 
-      .overlay > p {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      .card:hover .overlay {
-        visibility: visible;
-      }
 
       .card:hover {
         transform: scale(1.06, 1.06);
@@ -145,6 +133,10 @@
       .card:hover::after {
         opacity: 1;
       }
+
+      .happy{
+        border-radius: 5px
+      }
     </style>
   </head>
   <body onload="noLogin()">
@@ -153,38 +145,67 @@
       <h1>10I.COM</h1>
       <img src="./assets/moon.svg" id="icon" />
     </nav>
+    <br><br>
     <div class="cards">
       <div class="card special">
         <div class="overlay"><p>10 mins read</p></div>
-        <img src="./assets/sun.png" />
+        <img src="./assets/Download.png" class="happy" />
+        <h2>Mohammad Firoz is now in Class!!</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget. Orci sagittis eu volutpat odio. Est velit egestas dui id ornare arcu odio ut. Semper feugiat nibh sed pulvinar proin. Egestas integer eget aliquet nibh praesent tristique magna sit. Ac odio tempor orci dapibus ultrices. Gravida quis blandit turpis cursus. Tortor at auctor urna nunc id cursus metus aliquam eleifend. Mauris a diam maecenas sed enim.</p>
+      </div>
+
+      
+      <div class="card">
+        <div class="overlay"><p>10 mins read</p></div>
+        <img src="./assets/Download.png" class="happy" />
+        <h2>Firoz is in School</h2>
+        <p>Description</p>
+      </div>
+      <div class="card">
+        <div class="overlay"><p>10 mins read</p></div>
+        <img src="./assets/Download.png" class="happy" />
         <h2>News</h2>
         <p>Description</p>
       </div>
       <div class="card">
         <div class="overlay"><p>10 mins read</p></div>
-        <img src="./assets/sun.png" />
+        <img src="./assets/Download.png" class="happy" />
         <h2>News</h2>
         <p>Description</p>
       </div>
       <div class="card">
         <div class="overlay"><p>10 mins read</p></div>
-        <img src="./assets/sun.png" />
+        <img src="./assets/Download.png" class="happy" />
         <h2>News</h2>
         <p>Description</p>
       </div>
       <div class="card">
         <div class="overlay"><p>10 mins read</p></div>
-        <img src="./assets/sun.png" />
+        <img src="./assets/Download.png" class="happy" />
         <h2>News</h2>
         <p>Description</p>
-      </div>
-      <div class="card">
-        <div class="overlay"><p>10 mins read</p></div>
-        <img src="./assets/sun.png" />
-        <h2>News</h2>
-        <p>Description</p>
-      </div>
+      </div>  <div class="card">
+          <div class="overlay"><p>10 mins read</p></div>
+          <img src="./assets/Download.png" class="happy" />
+          <h2>News</h2>
+          <p>Description</p>
+        </div>  <div class="card">
+            <div class="overlay"><p>10 mins read</p></div>
+            <img src="./assets/Download.png" class="happy" />
+            <h2>News</h2>
+            <p>Description</p>
+          </div>  <div class="card">
+              <div class="overlay"><p>10 mins read</p></div>
+              <img src="./assets/Download.png" class="happy" />
+              <h2>News</h2>
+              <p>Description</p>
+            </div>
+
+            <br><br><br>
+
+
     </div>
+    <br><br><br>
     <script>
       let icon = document.getElementById("icon");
 
