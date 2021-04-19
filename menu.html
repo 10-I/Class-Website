@@ -14,7 +14,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
     />
-    <link rel="icon" href="./assets/favicon for website.png" type="image/x-icon">
+    <link
+      rel="icon"
+      href="./assets/favicon for website.png"
+      type="image/x-icon"
+    />
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,600&display=swap");
@@ -112,14 +116,13 @@
     </style>
   </head>
 
-  <body>
+  <body onload="noLogin()">
     <nav>
       <img src="./assets/left-arrow.svg" id="arrow" />
       <h1>10I.COM</h1>
-      <img src="./assets/moon.svg" id="icon" /><br/><br/>
-
+      <img src="./assets/moon.svg" id="icon" /><br /><br />
     </nav>
-<div class="faizanel" id="news">
+    <div class="faizanel" id="news">
       <h2>NEWS</h2>
       <p>
         Get the latest and most exclusive new right from the desks of
@@ -158,7 +161,7 @@
       <h2>EXCITED ABOUT THIS WEBSITE?</h2>
       <p>Know more about the development and the owls behind this website.</p>
     </div>
-<br><br><br><br><br>
+    <br /><br /><br /><br /><br />
     <script>
       let icon = document.getElementById("icon");
 
@@ -181,5 +184,6 @@
         window.location.href = "./newsmenu.html";
       };
     </script>
+    <script src="./src/errors.js"></script>
   </body>
 </html>
