@@ -116,7 +116,7 @@
     </style>
   </head>
 
-  <body onload="noLogin()">
+  <body onload="noLogin(); themeLoader()">
     <nav>
       <img src="./assets/left-arrow.svg" id="arrow" />
       <h1>10I.COM</h1>
@@ -163,27 +163,17 @@
     </div>
     <br /><br /><br /><br /><br />
     <script>
-      let icon = document.getElementById("icon");
-
-      icon.onclick = function () {
-        document.body.classList.toggle("dark-theme");
-        if (document.body.classList.contains("dark-theme")) {
-          icon.src = "./assets/sun.png";
-        } else {
-          icon.src = "./assets/moon.svg";
-        }
+      newsBtn = document.getElementById("news");
+      newsBtn.onclick = function () {
+        window.location.href = "./newsmenu.html";
       };
 
       let arrow = document.getElementById("arrow");
       arrow.onclick = function () {
         window.location.href = "./hello.html";
       };
-
-      let news = document.getElementById("news");
-      news.onclick = function () {
-        window.location.href = "./newsmenu.html";
-      };
     </script>
+    <script src="./src/theme.js"></script>
     <script src="./src/errors.js"></script>
   </body>
 </html>
