@@ -10,6 +10,59 @@
 
 
 <style>
+:root {
+  --base-color: rgba(255, 255, 255, 1);
+  --hover-color: rgba(196, 138, 230, 1);
+}
+
+body {
+  background-image: url(./assets/easy4.jpg);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Anton", sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100px;
+  height: 40px;
+  margin: 20px;
+  border: 1px solid var(--base-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.faizanel{
+	background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 50px;
+padding-bottom: 50px;
+margin-top: 200px;
+margin-left: 100px;
+margin-right: 100px;
+width: relative;
+
+
+}
+
+
+
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,700|Open+Sans:400italic,300italic);
 body {
   background-color: #fff
@@ -509,7 +562,7 @@ Animation keyframes
 
 </head>
 
-<body translate="no" data-new-gr-c-s-check-loaded="14.983.0" data-gr-ext-installed="" onload="noLogin(); themeLoader()">
+<body translate="no" data-new-gr-c-s-check-loaded="14.983.0" data-gr-ext-installed="" onload="noLogin(); themeLoader()" translate="no" data-new-gr-c-s-check-loaded="14.983.0" data-gr-ext-installed="" >
   <div class="overlay-navigation overlay-active overlay-slide-down">
   <nav role="navigation">
     <ul>
@@ -528,6 +581,18 @@ Animation keyframes
     <span class="bar-middle animate-middle-bar"></span>
     <span class="bar-bottom animate-bottom-bar"></span>
   </div>
+<br><br>
+
+   <div class="faizanel" style="font-family: Verdana">
+      <h1 id = "name"></h1>
+      <p id = 'description'></p>
+      </div>
+
+
+      </p>
+      <script src = "./src/wow.js"></script>
+      <script src = "./src/New.js"></script>
+      <script src = "./src/errors.js"></script>
 </section>
     <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
 
